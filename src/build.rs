@@ -186,6 +186,9 @@ impl Generator<'static> {
         }
         result
     }
+///To rename the lib.a to libruntime.a
+///
+/// without renaming the file compiler wont locate the file
 
     fn rename_runtime(&self)->Result<()>{
         println!(

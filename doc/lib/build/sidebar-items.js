@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GenBuilder","this builder must have a path to a complied Halide folder it is used to build multiple generators quickly"],["Generator","This represents halide generator it is built using [GenBuilder]"]]});

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <title>halide</title>
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+    <h1 class="title">halide</h1>
+    <nav id="TOC"><ul></ul></nav><p>These instructions also assume a fresh install of Ubntu LTS 21.04.</p>
+<p>First, update your system.</p>
+<p>dev@ubuntu:~$ sudo apt update
+dev@ubuntu:~$ sudo apt upgrade
+Then, install Halide’s necessary build tools and dependencies.</p>
+<p>dev@ubuntu:~$ sudo apt install <br />
+build-essential git ninja-build <br />
+clang-tools lld llvm-dev libclang-dev <br />
+libpng-dev libjpeg-dev libgl-dev <br />
+python3-dev python3-numpy python3-scipy python3-imageio <br />
+libopenblas-dev libeigen3-dev libatlas-base-dev
+Next, you will want the latest version of CMake (3.16+ supported):</p>
+<p>dev@ubuntu:~$ wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2&gt;/dev/null |<br />
+gpg –dearmor - | sudo tee /etc/apt/trusted.gpg.d/kitware.gpg &gt;/dev/null
+dev@ubuntu:~$ sudo apt-add-repository ‘deb https://apt.kitware.com/ubuntu/ focal main’
+dev@ubuntu:~$ sudo apt install cmake kitware-archive-keyring
+dev@ubuntu:~$ sudo rm /etc/apt/trusted.gpg.d/kitware.gpg
+Alternatively, you can install CMake via the Snap store:</p>
+<p>dev@ubuntu:~$ snap install cmake
+Be sure to also install the GPU drivers for your system (either Nvidia or AMD).</p>
+<p>Get Halide &amp; run the build</p>
+<p>This is mostly copied from the README, so check there first if these instructions have gone stale.</p>
+<p>dev@ubuntu:~$ git clone https://github.com/halide/Halide.git
+dev@ubuntu:~$ Make (Inside the cloned repo)</p>
+<p>##Description of bindings 
+###link to cargo docs 
+##Demo app Getting Started Guild </p>
+<p>1.) Install Halide Source 
+a.) The following install guild should be used: (link to halide install guild) 
+2.) 
+install rust Following the below install guild: 
+link to rust install guild 
+install Rust Cargo 
+link to cargo install guild 
+3.) 
+1.) In the terminal cd into the Halide/RustBindings/Demo 
+2.) run Cargo Build 
+3.) run Cargo test 
+4.) run Cargo run 
+4.) You should now have a slightly blurry picture of a cat</p>
+<p>##Building custom generator 
+Halide rust bindings allow a rust user to generate a user defined Halide generator and automatically create associated rust bindings.<br />
+1.) Step one TODO when finished with automatic generating of generators</p>
+<p>to be continue……..</p>
+
+    
+</body>
+</html>
